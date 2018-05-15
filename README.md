@@ -14,14 +14,16 @@ Summary: Ace editor bindings to enable a rich text editing environment within Sh
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-shinyace-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-shinyace-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-shinyace-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-shinyace-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-shinyace-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-shinyace-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-shinyace-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-shinyace-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-shinyace-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-shinyace-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-shinyace-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-shinyace-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-shinyace/badges/version.svg)](https://anaconda.org/conda-forge/r-shinyace)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-shinyace/badges/downloads.svg)](https://anaconda.org/conda-forge/r-shinyace)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--shinyace-green.svg)](https://anaconda.org/conda-forge/r-shinyace) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-shinyace.svg)](https://anaconda.org/conda-forge/r-shinyace) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-shinyace.svg)](https://anaconda.org/conda-forge/r-shinyace) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-shinyace.svg)](https://anaconda.org/conda-forge/r-shinyace) |
 
 Installing r-shinyace
 =====================
