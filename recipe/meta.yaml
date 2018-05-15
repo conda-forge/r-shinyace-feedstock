@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.3.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/shinyAce_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/shinyAce/shinyAce_{{ version }}.tar.gz
-  sha256: a9b6af7cbb11b7a18b8e169d9347f78b15dbf6492d3a3a13462700ae33529379
+  sha256: cb4704d739f38d0faa66b161c6869550684269103b88cce18a2da51dd7d70fc3
 
 build:
   number: 0
