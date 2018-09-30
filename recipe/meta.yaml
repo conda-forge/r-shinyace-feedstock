@@ -1,5 +1,4 @@
-{% set version = "0.3.1" %}
-
+{% set version = '0.3.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,30 +9,33 @@ package:
 source:
   fn: shinyAce_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/shinyAce_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/shinyAce/shinyAce_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/shinyAce_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/shinyAce/shinyAce_{{ version }}.tar.gz
   sha256: cb4704d739f38d0faa66b161c6869550684269103b88cce18a2da51dd7d70fc3
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+  host:
     - r-base
-    - r-shiny >=0.7.0
-
+    - r-jsonlite
+    - r-shiny >=1.0.5
   run:
     - r-base
-    - r-shiny >=0.7.0
+    - r-jsonlite
+    - r-shiny >=1.0.5
 
 test:
   commands:
-    - $R -e "library('shinyAce')"  # [not win]
+    - $R -e "library('shinyAce')"           # [not win]
     - "\"%R%\" -e \"library('shinyAce')\""  # [win]
 
 about:
@@ -48,3 +50,5 @@ extra:
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
+    - dbast
