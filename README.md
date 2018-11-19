@@ -14,9 +14,8 @@ Summary: Ace editor bindings to enable a rich text editing environment within Sh
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-shinyace-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-shinyace-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-shinyace-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-shinyace-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-shinyace-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-shinyace-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-shinyace-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-shinyace-feedstock)
 
 Current release info
 ====================
