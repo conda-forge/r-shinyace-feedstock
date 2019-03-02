@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = '0.3.3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: shinyAce_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/shinyAce_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyAce/shinyAce_{{ version }}.tar.gz
-  sha256: fd1bbbb3b8039368e2e851ca171bb1524174db5bc4313534aaea32c34d2c73b9
+  sha256: f24c992cfe7a9c6d69cb8c7d5ca86269f7e0626728b85587f3d4263238e6060b
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,9 +45,25 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: shinyAce
+# Type: Package
+# Title: Ace Editor Bindings for Shiny
+# Version: 0.3.3
+# Date: 2018-12-25
+# Authors@R: c( person("Vincent", "Nijs", role = c("aut", "cre"), email = "radiant@rady.ucsd.edu"), person("Forest", "Fang", role = "aut", email = "forest.fang@outlook.com"), person(family = "Trestle Technology, LLC", role = "aut", email = "cran@trestletechnology.net"), person("Jeff", "Allen", role = "aut", email = "cran@trestletechnology.net"), person(family = "Institut de Radioprotection et de Surete Nucleaire", role = c("cph"), email = "yann.richet@irsn.fr"), person(family = "Ajax.org B.V.", role = c("ctb", "cph"), comment = "Ace"))
+# Description: Ace editor bindings to enable a rich text editing environment within Shiny.
+# License: MIT + file LICENSE
+# Depends: R (>= 3.4.0)
+# Imports: shiny (>= 1.0.5), jsonlite
+# Suggests: testthat (>= 2.0.0), dplyr (>= 0.7.4)
+# BugReports: https://github.com/trestletech/shinyAce/issues
+# Encoding: UTF-8
+# RoxygenNote: 6.1.0
+# NeedsCompilation: no
+# Packaged: 2019-01-02 21:41:52 UTC; vnijs
+# Author: Vincent Nijs [aut, cre], Forest Fang [aut], Trestle Technology, LLC [aut], Jeff Allen [aut], Institut de Radioprotection et de Surete Nucleaire [cph], Ajax.org B.V. [ctb, cph] (Ace)
+# Maintainer: Vincent Nijs <radiant@rady.ucsd.edu>
+# Repository: CRAN
+# Date/Publication: 2019-01-03 09:30:07 UTC
