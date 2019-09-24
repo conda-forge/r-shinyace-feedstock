@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinyAce_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyAce/shinyAce_{{ version }}.tar.gz
-  sha256: 81bec52c105785db5aa793705477d73a048e7de9740d97cbb794eb0b5e817143
+  sha256: b67707bdcd86bb81014b2f04b26f6371caf7d70c7bf9d3e3db39ca29aa6b63d4
 
 build:
   merge_build_host: True  # [win]
