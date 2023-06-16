@@ -1,11 +1,11 @@
-About r-shinyace
-================
+About r-shinyace-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinyace-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=shinyAce
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinyace-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ace editor bindings to enable a rich text editing environment within Shiny.
 
