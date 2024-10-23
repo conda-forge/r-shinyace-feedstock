@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinyAce_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyAce/shinyAce_{{ version }}.tar.gz
-  sha256: 4a997ebbc78b0a7672635968f9543f94b8924b52f4dfc16e3059f76c60dbb88a
+  sha256: 5097bad0efbca6fd67015fb34c0e5e53510cf41d2318a8fdfda5baf46525ab1f
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
